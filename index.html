@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fan App</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body class="dark">
+  <button class="mode-toggle" onclick="toggleMode()">☀️</button>
+
+  <div class="fan-container">
+    <div class="fan">
+      <div class="blades" id="blades">
+        <div class="blade-wrapper" style="transform: rotate(0deg);">
+          <div class="blade"></div>
+        </div>
+        <div class="blade-wrapper" style="transform: rotate(120deg);">
+          <div class="blade"></div>
+        </div>
+        <div class="blade-wrapper" style="transform: rotate(240deg);">
+          <div class="blade"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="controls">
+      <button id="fanToggle">ON</button>
+    </div>
+  </div>
+
+  <audio id="clickOn">
+    <source src="fan-on-off.mp3" type="audio/mpeg">
+  </audio>
+
+  <audio id="clickOff">
+    <source src="fan-on-off.mp3" type="audio/mpeg">
+  </audio>
+
+  <audio id="fanRunning">
+    <source src="fan-voice.mp3" type="audio/mpeg">
+  </audio>
+
+
+  <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
